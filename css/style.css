@@ -1,0 +1,127 @@
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #222;
+    height: 100%;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    background: -webkit-linear-gradient(white, black);
+    background: -moz-linear-gradient(white, black);
+    background: -o-linear-gradient(white, black);
+    background: linear-gradient(white, black);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#colors {
+    float: left;
+    overflow: hidden;
+    width: 280px;
+}
+
+#colors li {
+    background-color: red;
+    color: black;
+    cursor: auto;
+    font-size: 30px;
+    line-height: 100px;
+    list-style-position: inside;
+    list-style-type: none;
+    height: 100px;
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#colors li.green {background-color: green;}
+#colors li.blue {background-color: blue;}
+#colors li.yellow {background-color: yellow;}
+#colors li.on {background-color: black;}
+
+p#start {cursor: pointer; color: blue;}
+p#start:hover {text-decoration: underline;}
+
+.playing #colors li {
+    cursor: pointer;
+}
+
+.game-over #colors li {
+    opacity: 0.5s;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    background-color: black;
+    border-radius: 10px;
+    border: white solid 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    padding: 20px;
+}
+
+.game-container {
+    margin: 0 auto;
+    width: 500px;
+    height: 450px;
+    background-color: gray;
+    border-radius: 10px;
+    border: white solid 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    padding: 20px;
+    text-align: center;
+}
+
+.game {
+    margin: 0 auto;
+    width: 310px;
+    height: 300px;
+    padding: 20px;
+}
+
+.button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.button:hover {
+    background-color: black;
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0,0,0,0.4);
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
